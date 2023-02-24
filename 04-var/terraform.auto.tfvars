@@ -1,0 +1,1 @@
+sample1 = "Hello Sample from Auto"
