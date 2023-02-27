@@ -7,18 +7,19 @@ resource "null_resource" "nothing" {
 }
 
 variable "d2" {
-  default = ["apple", "banana", "apple", "apple", "apple", "apple"]
+  default = ["apple", "banana"]
 }
 
 resource "null_resource" "d2" {
   count = length(var.d2)
 }
 
+/*
 variable "d3" {
   default = {
     apple = {
       name  = "apple"
-      #count = 3
+      count = 3
     }
     banana = {
       name  = "banana"
@@ -30,6 +31,7 @@ variable "d3" {
 resource "null_resource" "d3" {
   for_each = var.d3
 }
+*/
 
 output "FRUITS" {
   value = [for i in var.d2 : lower(i)]
