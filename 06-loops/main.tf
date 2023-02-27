@@ -18,7 +18,7 @@ variable "d3" {
   default = {
     apple = {
       name  = "apple"
-      count = 3
+      #count = 3
     }
     banana = {
       name  = "banana"
