@@ -1,3 +1,4 @@
+/*
 variable "d1" {
   default = 5
 }
@@ -5,6 +6,7 @@ variable "d1" {
 resource "null_resource" "nothing" {
   count = var.d1
 }
+*/
 
 variable "d2" {
   default = ["apple", "banana"]
